@@ -53,6 +53,7 @@ const App = () => {
             isOpen={isOpen}
             setIsOpen={setIsOpen}
           />
+          {/* <Notice/> */}
           <Editor
             setQuery={setQuery}
             value={value}
