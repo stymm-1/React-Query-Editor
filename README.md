@@ -4,6 +4,8 @@ This is a React-SQL-Editor (RSE) built using ReactJs and TailwindCSS.
 
 ## 👨‍💻 Demo available at
 
+https://rsqle.netlify.app/
+
 
 ## 👨‍🔧 Tech Stack
 
