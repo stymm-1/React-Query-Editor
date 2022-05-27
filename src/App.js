@@ -1,15 +1,15 @@
 import React, { useState, Suspense } from "react";
-import "./tail.css";
+import "./assets/output.css";
 import { Toaster } from "react-hot-toast";
-import Loader from "./Component/Loader";
-// const NavigationMenu = React.lazy(() =>
-//   import("./components/layouts/NavigationMenu")
-// );
-const Editor = React.lazy(() => import("./Component/Editor"));
-// const TableSection = React.lazy(() =>
-//   import("./components/table/TableSection")
-// );
-const Footer = React.lazy(() => import("./Component/Footer"));
+import Loader from "./components/reusable/Loader";
+const NavigationMenu = React.lazy(() =>
+  import("./components/layouts/NavigationMenu")
+);
+const Editor = React.lazy(() => import("./components/editor/Editor"));
+const TableSection = React.lazy(() =>
+  import("./components/table/TableSection")
+);
+const Footer = React.lazy(() => import("./components/layouts/Footer"));
 
 const App = () => {
   const [query, setQuery] = useState("");
@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <>
-      {/* <Toaster
+      <Toaster
         position="top-center"
         gutter={8}
         containerClassName=""
@@ -44,22 +44,22 @@ const App = () => {
             },
           },
         }}
-      /> */}
-      <div className="grid grid-cols-layout-desktop grid-rows-layout-desktop min-h-screen" style={{display:"block"}}>
+      />
+      <div className="grid grid-cols-layout-desktop grid-rows-layout-desktop min-h-screen">
         <Suspense fallback={<Loader />}>
-          {/* <NavigationMenu
+          <NavigationMenu
             setQuery={setQuery}
             setValue={setValue}
             isOpen={isOpen}
             setIsOpen={setIsOpen}
-          /> */}
+          />
           <Editor
             setQuery={setQuery}
             value={value}
             setValue={setValue}
             isOpen={isOpen}
           />
-          {/* {query ? <TableSection query={query} isOpen={isOpen} /> : null} */}
+          {query ? <TableSection query={query} isOpen={isOpen} /> : null}
           <Footer isOpen={isOpen} />
         </Suspense>
       </div>
