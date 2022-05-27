@@ -2,13 +2,13 @@
 
 This is a REACT SQL Editor built using ReactJs and TailwindCSS.
 
-![Homepage](src/assets/screenshots/screenshot-readme.png)
+<!-- ![Homepage](src/assets/screenshots/screenshot-readme.png) -->
 
 ## 👨‍💻 Demo
 
-<a href="https://github.com/rishipurwar1/coding-space" target="blank">
+<!-- <a href="https://github.com/rishipurwar1/coding-space" target="blank">
 <img src="https://img.shields.io/website?url=https://www.codingspace.codes&logo=github&style=flat-square" />
-</a>
+</a> -->
 
 Try out the website : [REACT SQL Editor](https://react-sql-editor-view.vercel.app/)
 
@@ -68,24 +68,3 @@ I calculated the performance and load time of this website using these two tools
 - Used Lighthouse DevTools Extension to find the performance issues and fix them using their actionable suggestion.
 - Used vercel to deploy this website to leverage its Vercel Edge Network compression that results in the better performance.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
