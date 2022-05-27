@@ -1,10 +1,10 @@
 import React from "react";
 
 const Navbar = React.memo(({ setQuery, setValue, isOpen, setIsOpen }) => {
-  const handleQuery = (queryName) => {
-    setQuery(queryName);
-    setValue(`select * from ${queryName}`);
-  };
+  // const handleQuery = (queryName) => {
+  //   setQuery(queryName);
+  //   setValue(`select * from ${queryName}`);
+  // };
   return (
     <>
       <nav
